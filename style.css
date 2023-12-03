@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&family=Oswald&family=Raleway:wght@400;600;800&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.first_screen {
+    width: 100%;
+    height: 100%;
+    background-image: url("../main_screen.png");
+    background-size:cover;
+    background-position: 25% 25%;
+}
+
+.top_part {
+    display: flex;
+}
+
+.left, .right {
+    width: 50%;
+}
+
+header {
+    display: flex;
+}
+
+header > div {
+    width: 33%;
+    text-align: center;
+}
+
+.menu_item {
+    text-decoration: none;
+}
+
+.menu_item, .politech {
+    color: white;
+}
+
+.politech {
+    font-family: "Koh Santepheap";
+    font-weight: 400;
+    font-size: 40px;
+}
+
+
+.opened {
+    color: white;
+    font-family: "Russo One";
+    font-weight: 400;
+    font-size: 104px;
+    text-align: center;
+}
+
+.standup {
+    color: white;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 165px;
+    margin-top: -60px;
+    text-align: center;
+}
+
+.stand {
+    color: #CC79FF;
+}
+
+.show {
+    color: white;
+    font-family: "Russo One";
+    font-weight: 400;
+    text-align: center;
+    font-size: 64px;
+    margin-top: -30px;
+}
+
+.take_part {
+    color: white;
+    font-family: Raleway;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.main_text {
+    margin-top: 60px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 80px;
+    height: 40px;
+}
+
+.button_take_part {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding: 12px 70px;
+    transition: 0.5s;
+}
+
+.button_take_part:hover {
+    border-top: 3px solid rgba(90%, 56%, 100%, 0.63);
+    border-bottom: 3px solid rgba(90%, 56%, 100%, 0.63);
+    color: rgba(90%, 56%, 100%, 0.63);
+    transition: 0.5s;
+}
