@@ -27,29 +27,17 @@ html, body {
     width: 50%;
 }
 
-header {
-    display: flex;
-}
 
 header > div {
-    width: 33%;
     text-align: center;
 }
 
-.menu_item {
-    text-decoration: none;
-}
-
-.menu_item, .politech {
-    color: white;
-}
-
 .politech {
+    color: white;
     font-family: "Koh Santepheap";
     font-weight: 400;
     font-size: 40px;
 }
-
 
 .opened {
     color: white;
@@ -94,13 +82,10 @@ header > div {
     margin-top: 60px;
 }
 
-.button {
-    text-align: center;
-    margin-top: 80px;
-    height: 40px;
-}
-
 .button_take_part {
+    display: block;
+    margin: 50px auto 0 auto;
+    width: 40%;
     font-family: Raleway;
     font-weight: 600;
     font-size: 32px;
