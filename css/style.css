@@ -206,6 +206,7 @@ h1 {
     color: white;
     font-size: 20px;
     font-family: Raleway;
+    margin-top: 45px;
 }
 
 .drinks {
@@ -219,4 +220,19 @@ h1 {
 .menu_list div:not(:first-child) {
     width: 15%;
     text-align: center;
+}
+
+.info_block {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.location_text, .comedians_text, .menu_text_wrap {
+    width: 10%;
+    border: 2px solid red;
+}
+
+.location_pics, .comedians_pics, .menu_list_wrap {
+    display: flex;
+    border: 2px solid blue;
 }
