@@ -186,4 +186,11 @@ img {
     color: #7a373e;
 }
 
-
+.aristophan {
+    display: block;
+    text-align: center;
+    color: #ab9aa4;
+    margin-top: 30px;
+    font-family: Raleway;
+    font-weight: 600;
+}
