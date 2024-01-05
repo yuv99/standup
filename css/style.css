@@ -202,11 +202,10 @@ h1 {
 
 .location, .comedians, .menu_list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     font-size: 20px;
     font-family: Raleway;
-    border: 2px solid red;
 }
 
 .drinks {
@@ -217,8 +216,7 @@ h1 {
     width: 30px;
 }
 
-.comedians div:not(:first-child), .location div:not(:first-child), .menu_list div:not(:first-child) {
-    border:2px solid blue;
+.menu_list div:not(:first-child) {
     width: 15%;
     text-align: center;
 }
