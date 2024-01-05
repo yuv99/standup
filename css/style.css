@@ -170,7 +170,7 @@ h1 {
     transition: 0.5s;
 }
 
-img {
+.pic {
     display: block;
     margin: 0 auto;
     border: 0.5px solid #1c1c1c;
@@ -194,4 +194,30 @@ img {
     font-family: Raleway;
     font-weight: 600;
     font-size: 25px;
+}
+
+.info_block {
+    background-color: black;
+}
+
+.location, .comedians, .menu_list {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px;
+    font-family: Raleway;
+    border: 2px solid red;
+}
+
+.drinks {
+    color: rgba(255, 0, 0, 0.42);
+}
+
+.fire_icon {
+    width: 30px;
+}
+
+.comedians div, .location div, .menu_list div {
+    border:2px solid blue;
+    width: 15%;
 }
