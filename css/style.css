@@ -218,7 +218,7 @@ h1 {
 }
 
 .menu_list div:not(:first-child) {
-    width: 15%;
+    /* width: 15%; */
     text-align: center;
 }
 
@@ -228,12 +228,13 @@ h1 {
     padding-bottom: 20px;
 }
 
-/* .location:first-child, .comedians:first-child, .menu_list:first-child {
-    width: 5%;
-    border: 5px solid red;
+.location_pics, .comedians_pics, .menu_items_wrap {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
 }
 
-.menu_text_wrap, .comedians_text_wrap, .location_text_wrap {
-    border:2px solid red;
-    width: 7%;
-} */
+.menu_items_wrap {
+    width: 90%;
+}
+
