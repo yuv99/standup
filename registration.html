@@ -10,7 +10,7 @@
     <h1>Кто ты, воин?</h1>
     <div class="pictures">
         <div class="viewer">
-            <a href="#">    
+            <a class="viewer_reg_link" href="#" name="viewer_reg_link">    
                 <div class="img_wrap">                     
                     <img class="pic" src="viewer.png" alt="Я зритель" width="400">
                 </div>
@@ -18,7 +18,7 @@
             <p>Я зритель,<br>сын Персея</p>                    
         </div>
         <div class="participant">
-            <a href="#">      
+            <a class="participant_reg_link" href="#" name="participant_reg_link">      
             <div class="img_wrap">           
                     <img class="pic" src="participant.png" alt="Я участник" width="400">     
             </div>
@@ -27,5 +27,106 @@
         </div>
     </div>
     <p class="aristophan"><b>* Аристофан</b> – древнегреческий комедиограф, поэт, «отец комедии». Первый комик.</p>
+
+
+<div class="popup_viewer" name="popup_viewer">
+    <div class="popup_content">
+        <div class="popup_header">
+            <h1>Регистрация зрителя</h1><a href="#" class="close_view" name="close_view">×</a>
+        </div>
+        <div class="popup_form">
+            <form>
+                <div class="data">
+                    <div class="name_date_block">
+                        <div class="input_person_info_block">
+                            <p class="input_name">ФИО</p>
+                            <input type="text">
+                        </div>
+                        <div class="input_date_block">
+                            <p class="input_date">Дата рождения</p>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="communication_block">
+                        <div class="input_email_block">
+                            <p class="input_email">Электронная почта</p>
+                            <input type="email">
+                        </div>
+                        <div class="input_phone_block">
+                            <p class="input_phone">Номер телефона</p>
+                            <input type="tel">
+                        </div>
+                    </div>
+                    <div class="input_number_of_friends_block">
+                        <p class="input_number">Число сопровождающих</p>
+                        <input type="number">
+                    </div>
+                    <div class="checkboxes">
+                        <div class="i_agree_block">
+                            <input class="i_agree" type="checkbox" name="agreement">
+                            <label for="i_agree">Я соглашаюсь на обработку персональных данных</label>
+                        </div>      
+                        <div class="i_agree_block">
+                            <input class="i_agree2" type="checkbox" name="agreement">
+                            <label for="i_agree2">Я соглашаюсь на рассылку</label>
+                        </div>       
+                        <div class="button"><a href="#" class="button_send">Отправить заявку</a></div>                  
+                    </div>           
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup_participant" name="popup_participant">
+    <div class="popup_content">
+        <div class="popup_header">
+            <h1>Регистрация участника</h1><a href="#" class="close_part" name="close_part">×</a>
+        </div>
+        <div class="popup_form">
+            <form>
+                <div class="data">
+                    <div class="name_date_block">
+                        <div class="input_person_info_block">
+                            <p class="input_name">ФИО</p>
+                            <input type="text">
+                        </div>
+                        <div class="input_date_block">
+                            <p class="input_date">Дата рождения</p>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="communication_block">
+                        <div class="input_email_block">
+                            <p class="input_email">Электронная почта</p>
+                            <input type="email">
+                        </div>
+                        <div class="input_phone_block">
+                            <p class="input_phone">Номер телефона</p>
+                            <input type="tel">
+                        </div>
+                    </div>
+                    <div class="input_performance_time">
+                        <p class="input_number">Желаемое время выступления</p>
+                        <input type="time">
+                    </div>
+                    <div class="checkboxes">
+                        <div class="i_agree_block">
+                            <input class="i_agree" type="checkbox" name="agreement">
+                            <label for="i_agree">Я соглашаюсь на обработку персональных данных</label>
+                        </div>      
+                        <div class="i_agree_block">
+                            <input class="i_agree2" type="checkbox" name="agreement">
+                            <label for="i_agree2">Я соглашаюсь на рассылку</label>
+                        </div>                            
+                        <div class="button"><a href="#" class="button_send">Отправить заявку</a></div>
+                    </div>           
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="scripts/show_popup_script.js"></script>
+<script src="scripts/close_popup_script.js"></script>
 </body>
 </html>
