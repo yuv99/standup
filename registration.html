@@ -10,7 +10,7 @@
     <h1>Кто ты, воин?</h1>
     <div class="pictures">
         <div class="viewer">
-            <a href="#">    
+            <a class="viewer_reg_link" href="#" name="viewer_reg_link">    
                 <div class="img_wrap">                     
                     <img class="pic" src="viewer.png" alt="Я зритель" width="400">
                 </div>
@@ -18,7 +18,7 @@
             <p>Я зритель,<br>сын Персея</p>                    
         </div>
         <div class="participant">
-            <a href="#">      
+            <a class="participant_reg_link" href="#" name="participant_reg_link">      
             <div class="img_wrap">           
                     <img class="pic" src="participant.png" alt="Я участник" width="400">     
             </div>
@@ -29,10 +29,10 @@
     <p class="aristophan"><b>* Аристофан</b> – древнегреческий комедиограф, поэт, «отец комедии». Первый комик.</p>
 
 
-<div class="popup_viewer">
+<div class="popup_viewer" name="popup_viewer">
     <div class="popup_content">
         <div class="popup_header">
-            <h1>Регистрация зрителя</h1><a href="#" class="close">×</a>
+            <h1>Регистрация зрителя</h1><a href="#" class="close_view" name="close_view">×</a>
         </div>
         <div class="popup_form">
             <form>
@@ -78,10 +78,10 @@
     </div>
 </div>
 
-<div class="popup_participant">
+<div class="popup_participant" name="popup_participant">
     <div class="popup_content">
         <div class="popup_header">
-            <h1>Регистрация участника</h1><a href="#" class="close">×</a>
+            <h1>Регистрация участника</h1><a href="#" class="close_part" name="close_part">×</a>
         </div>
         <div class="popup_form">
             <form>
@@ -126,6 +126,7 @@
         </div>
     </div>
 </div>
-
+<script src="scripts/show_popup_script.js"></script>
+<script src="scripts/close_popup_script.js"></script>
 </body>
 </html>
