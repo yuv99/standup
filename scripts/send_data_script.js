@@ -42,13 +42,16 @@ function sendData() {
             }
 
             else {
-                text = document.createElement('p');
-                text.textContent = "Заполните недостающие поля";
-                text.style.color = "red";
-                text.style.marginTop = "20px";
-                text.style.textAlign = "center";
-                button_viewer.item(0).after(text);
-                count = 0;
+                if (text==null) {
+                    text = document.createElement('p');
+                    text.textContent = "Заполните недостающие поля";
+                    text.style.color = "red";
+                    text.style.marginTop = "20px";
+                    text.style.textAlign = "center";
+                    button_viewer.item(0).after(text);
+                    count = 0;
+                }
+               
             }
         }
     
@@ -66,13 +69,16 @@ function sendData() {
                 thanks();
             }
             else {
-                text = document.createElement('p');
+                if (text==null) {
+                    text = document.createElement('p');
                     text.textContent = "Заполните недостающие поля";
                     text.style.color = "red";
                     text.style.marginTop = "20px";
                     text.style.textAlign = "center";
                     button_participant.item(0).after(text);
                     count = 0;
+                }
+                
             }
         }
 }
