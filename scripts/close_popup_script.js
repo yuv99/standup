@@ -23,8 +23,8 @@ function popupClose() {
             for(let i = 0; i < viewerInputs.length; i++) {
                 viewerInputs.item(i).style.borderColor = "#ffffff31";
             }
-            if (text!=null) {
-                btnViewerParent.removeChild(text);
+            if (text_viewer!=null) {
+                btnViewerParent.removeChild(text_viewer);
             }
            
             break;
@@ -35,8 +35,8 @@ function popupClose() {
             for(let i = 0; i < participantInputs.length; i++) {
                 participantInputs.item(i).style.borderColor = "#ffffff31";
             }
-            if (text!=null) {
-                btnParticipantParent.removeChild(text);
+            if (text_participant!=null) {
+                btnParticipantParent.removeChild(text_participant);
             }
             
             break;
