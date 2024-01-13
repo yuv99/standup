@@ -40,38 +40,39 @@
                     <div class="name_date_block">
                         <div class="input_person_info_block">
                             <p class="input_name">ФИО</p>
-                            <input type="text">
+                            <input type="text" name="viewer_input">
                         </div>
                         <div class="input_date_block">
                             <p class="input_date">Дата рождения</p>
-                            <input type="date">
+                            <input type="date" name="viewer_input">
                         </div>
                     </div>
                     <div class="communication_block">
                         <div class="input_email_block">
                             <p class="input_email">Электронная почта</p>
-                            <input type="email">
+                            <input type="email" name="viewer_input">
                         </div>
                         <div class="input_phone_block">
                             <p class="input_phone">Номер телефона</p>
-                            <input type="tel">
+                            <input type="tel" name="viewer_input">
                         </div>
                     </div>
                     <div class="input_number_of_friends_block">
                         <p class="input_number">Число сопровождающих</p>
-                        <input type="number">
+                        <input type="number" name="viewer_input">
                     </div>
                     <div class="checkboxes">
                         <div class="i_agree_block">
-                            <input class="i_agree" type="checkbox" name="agreement">
+                            <input class="i_agree" type="checkbox" name="agreement viewer_input">
                             <label for="i_agree">Я соглашаюсь на обработку персональных данных</label>
                         </div>      
                         <div class="i_agree_block">
-                            <input class="i_agree2" type="checkbox" name="agreement">
+                            <input class="i_agree2" type="checkbox" name="agreement viewer_input">
                             <label for="i_agree2">Я соглашаюсь на рассылку</label>
                         </div>       
-                        <div class="button"><a href="#" class="button_send">Отправить заявку</a></div>                  
-                    </div>           
+                        
+                    </div>        
+                    <div class="button"><a href="#" class="viewer_button_send">Отправить заявку</a></div>                     
                 </div>
             </form>
         </div>
@@ -89,44 +90,54 @@
                     <div class="name_date_block">
                         <div class="input_person_info_block">
                             <p class="input_name">ФИО</p>
-                            <input type="text">
+                            <input type="text" name="participant_input">
                         </div>
                         <div class="input_date_block">
                             <p class="input_date">Дата рождения</p>
-                            <input type="date">
+                            <input type="date" name="participant_input">
                         </div>
                     </div>
                     <div class="communication_block">
                         <div class="input_email_block">
                             <p class="input_email">Электронная почта</p>
-                            <input type="email">
+                            <input type="email" name="participant_input">
                         </div>
                         <div class="input_phone_block">
                             <p class="input_phone">Номер телефона</p>
-                            <input type="tel">
+                            <input type="tel" name="participant_input">
                         </div>
                     </div>
                     <div class="input_performance_time">
                         <p class="input_number">Желаемое время выступления</p>
-                        <input type="time">
+                        <input type="time" name="participant_input">
                     </div>
                     <div class="checkboxes">
                         <div class="i_agree_block">
-                            <input class="i_agree" type="checkbox" name="agreement">
+                            <input class="i_agree" type="checkbox" name="agreement participant_input">
                             <label for="i_agree">Я соглашаюсь на обработку персональных данных</label>
                         </div>      
                         <div class="i_agree_block">
-                            <input class="i_agree2" type="checkbox" name="agreement">
+                            <input class="i_agree2" type="checkbox" name="agreement participant_input">
                             <label for="i_agree2">Я соглашаюсь на рассылку</label>
                         </div>                            
-                        <div class="button"><a href="#" class="button_send">Отправить заявку</a></div>
-                    </div>           
+                        
+                    </div>        
+                    <div class="button"><a href="#" class="participant_button_send">Отправить заявку</a></div>   
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+<div class="popup_thanks">
+    <div class="popup_thanks_content">
+        <a href="#" class="close_thanks_popup" name="close_thanks_popup">×</a>
+        <p>Вы успешно зарегистрировались!</p>
+    </div>  
+</div>
+
 <script src="scripts/show_popup_script.js"></script>
 <script src="scripts/close_popup_script.js"></script>
+<script src="scripts/send_data_script.js"></script>
 </body>
 </html>
