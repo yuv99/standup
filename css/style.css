@@ -272,6 +272,8 @@ h1 {
     top:0;
     left:0;
     z-index: 100;
+    /* opacity: 0;
+    visibility: hidden; */
 }
 
 .popup_viewer h1, .popup_participant h1 {
@@ -338,4 +340,15 @@ h1 {
 
 input[type="checkbox"] {
     vertical-align:sub;
+}
+
+.close {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+
+.popup_header {
+    display: flex;
+    justify-content: space-between;
 }
