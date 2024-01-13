@@ -4,9 +4,9 @@ let participantInputs = document.getElementsByName("participant_input");
 let button_viewer = document.getElementsByClassName("viewer_button_send");
 let button_participant = document.getElementsByClassName("participant_button_send");
 
-let text;
+let text_participant;
+let text_viewer;
 
-let flag = false;
 let count = 0;
 
 let popup_thanks = document.getElementsByClassName("popup_thanks").item(0);
@@ -36,19 +36,18 @@ function sendData() {
                 }
             }
             if (count == 0) {
-                flag = true;
                 cleanData("viewer");
                 thanks();
             }
 
             else {
-                if (text==null) {
-                    text = document.createElement('p');
-                    text.textContent = "Заполните недостающие поля";
-                    text.style.color = "red";
-                    text.style.marginTop = "20px";
-                    text.style.textAlign = "center";
-                    button_viewer.item(0).after(text);
+                if (!text_viewer) {
+                    text_viewer = document.createElement('p');
+                    text_viewer.textContent = "Заполните недостающие поля";
+                    text_viewer.style.color = "red";
+                    text_viewer.style.marginTop = "20px";
+                    text_viewer.style.textAlign = "center";
+                    button_viewer.item(0).after(text_viewer);
                     count = 0;
                 }
                
@@ -64,18 +63,17 @@ function sendData() {
                 }
             }
             if (count == 0) {
-                flag = true;
                 cleanData("partic");
                 thanks();
             }
             else {
-                if (text==null) {
-                    text = document.createElement('p');
-                    text.textContent = "Заполните недостающие поля";
-                    text.style.color = "red";
-                    text.style.marginTop = "20px";
-                    text.style.textAlign = "center";
-                    button_participant.item(0).after(text);
+                if (!text_participant) {
+                    text_participant = document.createElement('p');
+                    text_participant.textContent = "Заполните недостающие поля";
+                    text_participant.style.color = "red";
+                    text_participant.style.marginTop = "20px";
+                    text_participant.style.textAlign = "center";
+                    button_participant.item(0).after(text_participant);
                     count = 0;
                 }
                 
@@ -86,15 +84,17 @@ function sendData() {
 function setBorder() {
         if(isViewerOpened) {
             this.style.borderColor = "#ffffff31";
-            if (text!=null) {
-                btnViewerParent.removeChild(text);
+            if (text_viewer) {
+                btnViewerParent.removeChild(text_viewer);
+                text_viewer = null;
             }
             
         }
         else if(isParticipantOpened) {
             this.style.borderColor = "#ffffff31";
-            if (text!=null) { 
-                btnParticipantParent.removeChild(text);
+            if (text_participant) { 
+                btnParticipantParent.removeChild(text_participant);
+                text_participant=null;
             }
            
         }
