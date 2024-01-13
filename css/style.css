@@ -104,6 +104,10 @@ header > div {
     transition: 0.5s;
 }
 
+.button_send {
+    font-size: 20px;
+}
+
 .bottom_part {
     text-align: right;
     padding-right: 5%;
