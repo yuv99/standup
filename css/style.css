@@ -331,3 +331,7 @@ h1 {
 .data input[type="radio"]:first-of-type {
     margin-top: 20px;
 }
+
+input[type="checkbox"] {
+    vertical-align:sub;
+}
