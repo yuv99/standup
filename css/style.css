@@ -12,6 +12,27 @@ html, body {
     margin: 0 auto;
 }
 
+.main_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_header h1 {
+    width: 100%;
+}
+
+.back_link {
+    color: white; 
+    font-size: 80px; 
+    display: block; 
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.back_link:hover {
+    color: rgba(90%, 56%, 100%, 0.63);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -82,6 +103,7 @@ header > div {
     text-align: center;
     margin-top: 10px;
     font-size: 30px;
+    transition: 0.5s;
 }
 
 .main_text {
@@ -125,7 +147,6 @@ header > div {
     border-top: 3px solid rgba(90%, 56%, 100%, 0.63);
     border-bottom: 3px solid rgba(90%, 56%, 100%, 0.63);
     color: rgba(90%, 56%, 100%, 0.63);
-    transition: 0.5s;
 }
 
 .reg_page {
