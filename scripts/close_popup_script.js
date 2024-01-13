@@ -23,7 +23,10 @@ function popupClose() {
             for(let i = 0; i < viewerInputs.length; i++) {
                 viewerInputs.item(i).style.borderColor = "#ffffff31";
             }
-            btnViewerParent.removeChild(text);
+            if (text!=null) {
+                btnViewerParent.removeChild(text);
+            }
+           
             break;
         case "close_part":
             popupParticipantBlock.style.opacity = 0;
@@ -32,7 +35,10 @@ function popupClose() {
             for(let i = 0; i < participantInputs.length; i++) {
                 participantInputs.item(i).style.borderColor = "#ffffff31";
             }
-            btnParticipantParent.removeChild(text);
+            if (text!=null) {
+                btnParticipantParent.removeChild(text);
+            }
+            
             break;
         case "close_thanks_popup":
             popup_thanks.style.opacity = 0;
